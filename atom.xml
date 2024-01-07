@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Mo的记事簿</title>
+  <icon>https://blog.xiowo.net/img/avatar.png</icon>
+  <subtitle>万年鸽王，哈哈OvO</subtitle>
+  <link href="https://blog.xiowo.net/atom.xml" rel="self"/>
+  
+  <link href="https://blog.xiowo.net/"/>
+  <updated>2023-08-30T11:05:34.638Z</updated>
+  <id>https://blog.xiowo.net/</id>
+  
+  <author>
+    <name>Mo</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Surface“幽灵触控”解决方法</title>
+    <link href="https://blog.xiowo.net/posts/179cdf12.html"/>
+    <id>https://blog.xiowo.net/posts/179cdf12.html</id>
+    <published>2023-08-23T12:54:28.000Z</published>
+    <updated>2023-08-30T11:05:34.638Z</updated>
+    
+    <content type="html"><![CDATA[<p>记个修复surface幽灵触控的工具</p><p>快被这幽灵触控高气死了，不过经过我科学的使用搜索工具找到了一个办法，亲测有用，但是能管多久我就不清楚了 ¿</p><blockquote><p>相关文章地址：<a href="https://blog.csdn.net/qq_30958667/article/details/105923493?ydreferer=aHR0cHM6Ly9jbi5iaW5nLmNvbS8=">传送门</a></p></blockquote><h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><p>先把工具贴出来</p><p>蓝奏云：<a href="https://xiowo.lanzouw.com/iLK70168218h">https://xiowo.lanzouw.com/iLK70168218h</a><br>密码:dwyy</p><h3 id="我的surface型号"><a href="#我的surface型号" class="headerlink" title="我的surface型号"></a>我的surface型号</h3><p>设备型号： Surface Pro 5<br>版本： Microsoft Windows 11 专业工作站版<br>OS 版本： 10.0.22621.1992<br>OS 体系结构： 64 位<br>BIOS 版本&#x2F;日期： 239.645.768 2015&#x2F;04&#x2F;05<br>处理器： Intel(R) Core(TM) i5-7300U CPU @ 2.60GHz</p><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol><li><p>断开电源连接</p></li><li><p>do not submit to florescent light （可能是别调背光？）</p></li><li><p>在室温下操作</p></li><li><p><strong>不要触碰屏幕！！</strong></p></li></ol><p>不过还是最好移除除键盘外的外接设备什么都不动</p><h3 id="END"><a href="#END" class="headerlink" title="END"></a>END</h3><p>这个工具挺好用的，屏幕终于正常了qwq</p><blockquote><p>后续：屏幕两块区域断触，排查是小板问题，更换触摸小板解决qwq    -23.8.30</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;记个修复surface幽灵触控的工具&lt;/p&gt;
+&lt;p&gt;快被这幽灵触控高气死了，不过经过我科学的使用搜索工具找到了一个办法，亲测有用，但是能管多久我就不清楚了 ¿&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;相关文章地址：&lt;a href=&quot;https://blog.csdn.net</summary>
+      
+    
+    
+    
+    <category term="工具" scheme="https://blog.xiowo.net/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="工具" scheme="https://blog.xiowo.net/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="surface" scheme="https://blog.xiowo.net/tags/surface/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>雨世界地图(简体中文)</title>
+    <link href="https://blog.xiowo.net/posts/5f6551dc.html"/>
+    <id>https://blog.xiowo.net/posts/5f6551dc.html</id>
+    <published>2023-08-22T13:29:36.000Z</published>
+    <updated>2023-12-30T12:08:15.069Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="关于地图"><a href="#关于地图" class="headerlink" title="关于地图"></a>关于地图</h3><p>一个源于 <a href="https://github.com/rain-world-map">https://github.com/rain-world-map</a> 的雨世界地图项目，我对他做了点修改。</p><p>原项目地址：<a href="https://github.com/rain-world-map/rain-world-map.github.io">GitHub</a><br>原网页地址：<a href="https://rain-world-map.github.io/">https://rain-world-map.github.io/</a></p><p>修改项目地址：<a href="https://github.com/xiowo/rain-world-map-SimplifiedChinese">GitHub</a>  | <a href="https://gitee.com/rain-world-map">Gitee</a><br>修改地址：<a href="https://rain-world-map.gitee.io/">https://rain-world-map.gitee.io</a></p><blockquote><p>此地图包含 【雨世界】以及【雨世界dlc：倾盆大雨 】</p></blockquote><h3 id="杂"><a href="#杂" class="headerlink" title="杂"></a>杂</h3><p>因为我还没有接触js所以js部分基本没动,之后有时间研究研究js</p><p>目前主要维护Gitee仓库,Github上的文件大更新再传(<del>老是传错仓库啊啊啊╰（‵□′）╯</del>)</p><p>将地图内容进行翻译，加了一些乱七八糟的东西</p><p>把前端文件扔到gitee上，解决了GitHub各种拦截污染问题（¿）</p><p>之后有时间再研究这个吧ԅ(¯﹃¯ԅ)</p><p><img src="https://bu.dusays.com/2023/11/04/654641f52f5e5.png" alt="示例图"></p><p><img src="https://bu.dusays.com/2023/11/04/654641f6561c9.png" alt="示例图"></p><h4 id="修改记录"><a href="#修改记录" class="headerlink" title="修改记录"></a>修改记录</h4><div class="timeline undefined"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2023</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>11-17</p></div></div><div class='timeline-item-content'><p>1.2.1<br>修正一些错误，补充并微调了一些东西</p></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>11-04</p></div></div><div class='timeline-item-content'><p>1.2.0<br>新增怪猫地图、更多地图展示的物品<br>rw-map页面新增蛞蝓猫、地图标识、物品的简单描述<br>前端文件部署至Gitee pages</p></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>10-05</p></div></div><div class='timeline-item-content'><p>1.1.0<br>新增原版地图和rw-map页面<br>加了点乱七八糟的东西╰(<em>°▽°</em>)╯</p></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>8-22</p></div></div><div class='timeline-item-content'><p>1.0.0<br>把地图翻译了一下，基本没变</p></div></div></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;关于地图&quot;&gt;&lt;a href=&quot;#关于地图&quot; class=&quot;headerlink&quot; title=&quot;关于地图&quot;&gt;&lt;/a&gt;关于地图&lt;/h3&gt;&lt;p&gt;一个源于 &lt;a href=&quot;https://github.com/rain-world-map&quot;&gt;https://githu</summary>
+      
+    
+    
+    
+    <category term="项目" scheme="https://blog.xiowo.net/categories/%E9%A1%B9%E7%9B%AE/"/>
+    
+    <category term="前端" scheme="https://blog.xiowo.net/categories/%E9%A1%B9%E7%9B%AE/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="游戏" scheme="https://blog.xiowo.net/categories/%E9%A1%B9%E7%9B%AE/%E5%89%8D%E7%AB%AF/%E6%B8%B8%E6%88%8F/"/>
+    
+    
+    <category term="游戏" scheme="https://blog.xiowo.net/tags/%E6%B8%B8%E6%88%8F/"/>
+    
+    <category term="RainWorld" scheme="https://blog.xiowo.net/tags/RainWorld/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Twikoo 表情包修改</title>
+    <link href="https://blog.xiowo.net/posts/759e8c74.html"/>
+    <id>https://blog.xiowo.net/posts/759e8c74.html</id>
+    <published>2023-07-31T09:17:22.000Z</published>
+    <updated>2023-07-31T02:44:45.520Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近刚把博客搭好，看别人的 Twikoo 都自定义表情包，于是我也研究了一下</p><h2 id="可能用到的"><a href="#可能用到的" class="headerlink" title="可能用到的"></a>可能用到的</h2><p>大佬整理的表情包可以从 GitHub项目<a href="https://github.com/2X-ercha/Twikoo-Magic">Twikoo-Magic</a>或<a href="https://emotion.xiaokang.me/">小康的表情速查</a> 中找到</p><h2 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h2><p>Twikoo 的表情使用的是 <code>OwO</code> ,所以表情配置为一个 json 文件</p><blockquote><p>json 文件对格式要求严格，例如键与值都需要使用双引号进行包裹，如果是最后一项那么结尾不能包含逗号，可见<a href="https://www.runoob.com/json/json-tutorial.html"> 菜鸟教程</a></p></blockquote><p>不过我们目前不需要了解那么深入</p><p>在表情速查里复制Twikoo适配的 json 代码，以 <code>阿鲁</code> 为例：</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;aru&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;container&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;aru-1&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;icon&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;img src=&#x27;https://7.dusays.com/2021/01/15/3c76dffbc08a5.png&#x27;&gt;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">..........</span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;aru-99&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;icon&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;img src=&#x27;https://7.dusays.com/2021/01/15/a5cf180e2f22a.png&#x27;&gt;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>复制多个记得做修改，删除上一个表情末尾的一个<code>&#125;</code> 然后添加 <code>,</code>  再把第二个开头的 <code>&#123;</code> 删除 ，以 <code>阿鲁</code> 和 <code>blob</code> 为例：</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;aru&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;container&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;aru-1&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;icon&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;img src=&#x27;https://7.dusays.com/2021/01/15/3c76dffbc08a5.png&#x27;&gt;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;aru-99&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;icon&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;img src=&#x27;https://7.dusays.com/2021/01/15/a5cf180e2f22a.png&#x27;&gt;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;blob&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;image&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;container&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;blob-RedTick&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;icon&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;img src=&#x27;https://7.dusays.com/2021/01/15/c8407d638ca85.png&#x27;&gt;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;text&quot;</span><span class="punctuation">:</span> <span class="string">&quot;blob-wumpusblob&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;icon&quot;</span><span class="punctuation">:</span> <span class="string">&quot;&lt;img src=&#x27;https://7.dusays.com/2021/01/15/309dc42e77869.png&#x27;&gt;&quot;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>可以前往 <a href="https://www.bejson.com/">在线JSON格式化验证工具</a> 检查是否有误</p><p>最后将 json 文件上传服务器即可</p><h3 id="Twikoo-配置"><a href="#Twikoo-配置" class="headerlink" title="Twikoo 配置"></a>Twikoo 配置</h3><p>进入你的 Twikoo 控制台<br>找到 <code>插件</code> &gt; <code>EMOTION_CDN</code>  填入 <code>你的Json链接</code></p><p><img src="https://bu.dusays.com/2023/07/31/64c7837761d76.png" alt="Twikoo 配置"></p><p>上面那个 <code>SHOW_EMOTION</code> 可以不用设置因为它默认就是 true </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近刚把博客搭好，看别人的 Twikoo 都自定义表情包，于是我也研究了一下&lt;/p&gt;
+&lt;h2 id=&quot;可能用到的&quot;&gt;&lt;a href=&quot;#可能用到的&quot; class=&quot;headerlink&quot; title=&quot;可能用到的&quot;&gt;&lt;/a&gt;可能用到的&lt;/h2&gt;&lt;p&gt;大佬整理的表情包可以从 </summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://blog.xiowo.net/categories/Hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://blog.xiowo.net/tags/hexo/"/>
+    
+    <category term="Twikoo" scheme="https://blog.xiowo.net/tags/Twikoo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SEO优化：Hexo-abbrlink插件生成永久固定链接</title>
+    <link href="https://blog.xiowo.net/posts/a1e8a28a.html"/>
+    <id>https://blog.xiowo.net/posts/a1e8a28a.html</id>
+    <published>2023-07-23T01:54:17.000Z</published>
+    <updated>2023-07-23T11:02:15.048Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>首先Hexo默认的静态URL格式是 :year&#x2F;:month&#x2F;:day&#x2F;:title，即年、月、日、标题来生成固定链接的。如hexo生成的第一篇默认的文章为<a href="http://xiowo.net/2023/07/23/hello-world%E3%80%82">http://xiowo.net/2023/07/23/hello-world。</a></p><p>这种默认配置的缺点就是一般文件名是中文，导致url链接里有中文出现，分享出去的话中文就会转为UTF-8编码，导致文章链接又臭又长，不利于seo。</p><p>使用 hexo-abbrlink 插件可以完美解决，具体使用方法如下：</p><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>对于abbrlik插件可详见项目源地址：<a href="https://github.com/rozbo/hexo-abbrlink">Github</a></p><p>视频教程可见安知鱼大佬的b站视频</p><iframe src="//player.bilibili.com/player.html?aid=644553654&bvid=BV1oY4y1c7p2&cid=804499261&page=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" autoplay=0> </iframe><h4 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure><p>修改 hexo  <code>config.yml</code> 文件中的永久链接为</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">posts/:abbrlink.html</span> <span class="comment"># 此处可以自己设置，也可以直接使用 :/abbrlink</span></span><br></pre></td></tr></table></figure><p>将以下内容复制到 hexo  <code>config.yml </code> 的最底下</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># abbrlink config</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line">  <span class="attr">alg:</span> <span class="string">crc32</span>      <span class="comment">#support crc16(default) and crc32</span></span><br><span class="line">  <span class="attr">rep:</span> <span class="string">hex</span>        <span class="comment">#support dec(default) and hex</span></span><br></pre></td></tr></table></figure><h4 id="生成链接示例"><a href="#生成链接示例" class="headerlink" title="生成链接示例"></a>生成链接示例</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">crc16 &amp; hex</span><br><span class="line">https://xiowo.net/posts/55c6.html</span><br><span class="line">crc16 &amp; dec</span><br><span class="line">https://xiowo.net/posts/43212.html</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">crc32 &amp; hex</span><br><span class="line">https://xiowo.bet/posts/6ec16a2c.html</span><br><span class="line">crc32 &amp; dec</span><br><span class="line">https://xiowo.net/posts/1521457752.html</span><br></pre></td></tr></table></figure><h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><p>对于先前已有文章的，请使用 <code>hexo clean</code> 清除以前生成的文章缓存，然后 <code>hexo g</code> 重新渲染即可</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h2&gt;&lt;p&gt;首先Hexo默认的静态URL格式是 :year&amp;#x2F;:month&amp;#x2F;:day&amp;#x2F;:title，即年、月、日、标题来生成</summary>
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://blog.xiowo.net/categories/Hexo/"/>
+    
+    
+    <category term="前端" scheme="https://blog.xiowo.net/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="seo" scheme="https://blog.xiowo.net/tags/seo/"/>
+    
+    <category term="hexo" scheme="https://blog.xiowo.net/tags/hexo/"/>
+    
+    <category term="abbrlink" scheme="https://blog.xiowo.net/tags/abbrlink/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>终于把hexo博客整好啦~</title>
+    <link href="https://blog.xiowo.net/posts/261f.html"/>
+    <id>https://blog.xiowo.net/posts/261f.html</id>
+    <published>2023-07-12T01:06:45.000Z</published>
+    <updated>2023-07-12T01:09:24.820Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h4><p>你好访客！这里是沫(Mo)~</p><p>如你所见这是我<del>水</del>的第一篇文章<br>日后可能会做(?)</p><ul><li><input checked="" disabled="" type="checkbox"> 水文章</li><li><input checked="" disabled="" type="checkbox"> 写教程</li><li><input checked="" disabled="" type="checkbox"> 分享感想</li><li><input checked="" disabled="" type="checkbox"> 摸鱼(?)</li></ul><p>当然之后的文章肯定都是人写的<del>（虽然写的烂）</del></p><p><img src="/img/Written-By-Human-Not-By-AI-Badge-white.png" alt="Written-By-Human-Not-By-AI-Badge"></p><p>AI摘要只会出现在教程类的文章，但生活和其他的文章是不会启用的</p><h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>这里是我的记事簿，可能会有<strong>日常趣事</strong>的<strong>分享</strong>(?)</p><p>不过你应该可以在这里找到对你有用的<strong>知识</strong>和<strong>教程</strong>⸜(๑’ᵕ’๑)⸝⋆*。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">██╗     ██╗         ██╗     ██╗</span><br><span class="line">████╗ ████║         ████╗ ████║</span><br><span class="line">██╔═██╔╝██║ ██╗ ██╗ ██╔═██╔╝██║ ██████╗</span><br><span class="line">██║ ╚═╝ ██║ ██║ ██║ ██║ ╚═╝ ██║ ██  ██║</span><br><span class="line">██║     ██║ ╚████╔╝ ██║     ██║ ██████║</span><br><span class="line">╚═╝     ╚═╝  ╚═══╝  ╚═╝     ╚═╝ ╚═════╝</span><br><span class="line"></span><br></pre></td></tr></table></figure><p align="right">——Mo和Mu 2023.7.16</P>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;Hello-World&quot;&gt;&lt;a href=&quot;#Hello-World&quot; class=&quot;headerlink&quot; title=&quot;Hello World!&quot;&gt;&lt;/a&gt;Hello World!&lt;/h4&gt;&lt;p&gt;你好访客！这里是沫(Mo)~&lt;/p&gt;
+&lt;p&gt;如你所见这是我&lt;de</summary>
+      
+    
+    
+    
+    
+    <category term="HelloWorld!" scheme="https://blog.xiowo.net/tags/HelloWorld/"/>
+    
+  </entry>
+  
+</feed>

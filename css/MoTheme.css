@@ -1,0 +1,89 @@
+/* 这里是Mo的blog的主样式，你想拿就拿吧/ᐠ - ˕ -マ Ⳋ  MoTheme v1.2.0 */
+
+/* 网站背景 */
+#web_bg {
+    background-size: 20rem;
+    background-image: url(/img/bg.svg) !important;
+    background-repeat: initial
+}
+
+/* 夜间网站背景 */
+[data-theme=dark] #web_bg {
+    background-size: 100rem;
+    background-image: url(/img/bg-dark.jpg) !important;
+    /* background-repeat: initial */
+}
+
+/* 夜间页脚黑色透明遮罩 */
+[data-theme=dark] #footer {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme=dark] #footer #footer-bar {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* 夜间主页文章卡片、分类条、即刻条黑色透明遮罩 */
+[data-theme="dark"] #recent-posts>.recent-post-item,
+[data-theme="dark"] #category-bar.category-bar,
+[data-theme="dark"] #bbTimeList {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* 设置白天页脚背景 */
+[data-theme=light] #footer,
+[data-theme=light] #footer-wrap {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* 白天主页分类条、即刻条、页脚白色透明遮罩 */
+[data-theme="light"] #category-bar,
+[data-theme="light"] #bbTimeList,
+[data-theme=light] #footer-bar {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 首页欢迎信息 */
+#welcome-info {
+    white-space: pre-wrap;
+    border-radius: 14px;
+    --kouseki-welcome-color: #49B1F5;
+    --kouseki-ip-color: #49B1F5;
+    --kouseki-gl-size: 16px !important;
+}
+
+/* 去除首页阴影 */
+.topGroup .todayCard::after {
+    box-shadow: none;
+}
+
+/* 去除loading小绿点 */
+#loading-box .loading-image-dot {
+    display: none;
+}
+
+/* 404页面样式 */
+#error-wrap .error-content .error-img {
+    background-color: #fff !important;
+}
+
+@media screen and (max-width: 768px) {
+    #error-wrap .error-content {
+        height: 100% !important;
+    }
+}
+
+/* Twikoo样式修改 */
+#twikoo code {
+    font-family: 'CascadiaCodePL' !important;
+}
+
+[data-theme=light] #twikoo .tk-comment pre {
+    background: #f7fafe !important;
+    border: 1px solid #e7e9ec !important;
+}
+
+[data-theme="dark"] #twikoo .tk-comment pre {
+    background: #18171d !important;
+    border: 1px solid #42444a !important;
+}
