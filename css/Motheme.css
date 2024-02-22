@@ -1,0 +1,77 @@
+/* 这里是Mo的blog的主样式，你想拿就拿吧/ᐠ - ˕ -マ Ⳋ  MoTheme v1.2.3 */
+/* 主题文件改崩了，还是外挂尿袋吧╰（‵□′）╯ */
+
+/* 浏览器不兼容提示 */
+.warning-message {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #f66;
+    border: 1px solid #f00;
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+}
+
+/* Twikoo样式修改  */
+#twikoo code {
+    font-family: 'CascadiaCodePL' !important;
+}
+
+[data-theme=light] #twikoo .tk-comment pre {
+    background: #292d3e !important;
+    border: 1px solid #252938 !important;
+}
+
+[data-theme="dark"] #twikoo .tk-comment pre {
+    background: #18171d !important;
+    border: 1px solid #42444a !important;
+}
+
+/* 白天网站背景 */
+#web_bg {
+    background-size: 20rem;
+    background-image: url(/img/bg.svg) !important;
+    background-repeat: initial
+}
+
+/* 夜间网站背景 */
+[data-theme=dark] #web_bg {
+    background-size: 100rem;
+    background-image: url(/img/bg-dark.jpg) !important;
+}
+
+/* 夜间页脚黑色透明遮罩 */
+[data-theme=dark] #footer {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme=dark] #footer #footer-bar {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* 夜间主页文章卡片、分类条、即刻条黑色透明遮罩 */
+[data-theme="dark"] #recent-posts>.recent-post-item,
+[data-theme="dark"] #category-bar.category-bar,
+[data-theme="dark"] #bbTimeList {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* 设置白天页脚背景 */
+@media screen and (min-width: 768px) {
+
+    [data-theme=light] #footer,
+    [data-theme=light] #footer-wrap {
+        background: rgba(255, 255, 255, 0.3) !important;
+    }
+}
+
+/* 白天主页分类条、即刻条、页脚白色透明遮罩 */
+@media screen and (min-width: 768px) {
+
+    [data-theme="light"] #category-bar,
+    [data-theme="light"] #bbTimeList,
+    [data-theme=light] #footer-bar {
+        background: rgba(255, 255, 255, 0.9) !important;
+    }
+}
