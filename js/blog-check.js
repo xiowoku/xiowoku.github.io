@@ -78,7 +78,3 @@ window.onload = function () {
         }
     }, timeout);
 })();
-
-window.addEventListener("load", (event) => {
-    SAONotify && SAONotify('更新通知', `已刷新缓存，更新为最新内容`);
-});
