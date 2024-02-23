@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (response) {
           // 如果找到了匹配的缓存响应
           response.json().then(function (data) {
-            SAONotify && SAONotify('更新通知📢', `已刷新缓存，更新为${data.global + "." + data.local}版本最新内容😸`);
+            SAONotify && SAONotify('更新通知📢', `已刷新缓存，更新为${data.global + "." + data.local}版本内容😸`);
           });
         } else {
           console.info('未找到匹配的缓存响应');

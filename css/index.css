@@ -13780,11 +13780,9 @@ h1.page-title + .tag-cloud-list {
   box-shadow: var(--anzhiyu-shadow-main);
 }
 [data-theme=light] #page-header.nav-fixed #nav {
-  background: rgba(255,255,255,0.88);
-!important
+  background: rgba(255,255,255,0.88) !important;
   backdrop-filter: blur(5px);
 }
-!important
 [data-theme=dark] #page-header.nav-fixed #nav {
   background: rgba(30,30,30,0.6) !important;
   backdrop-filter: blur(5px);
