@@ -20882,7 +20882,12 @@ body .snackbar-container::after {
   display: none;
 }
 #twikoo .tk-comments .el-button.tk-preview {
-  display: none;
+  position: absolute;
+  top: -40px;
+  right: 107px;
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
 }
 #twikoo .tk-comments .el-button--primary.is-disabled,
 #twikoo .tk-comments .el-button--primary.is-disabled:active,
@@ -20905,7 +20910,7 @@ body .snackbar-container::after {
   transition: 0.3s;
   width: 6.25rem;
   position: absolute;
-  top: -43px;
+  top: -41px;
   right: 0;
   margin-left: 0.5rem !important;
   height: 32px;

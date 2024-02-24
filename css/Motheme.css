@@ -28,6 +28,35 @@
     border: 1px solid #42444a !important;
 }
 
+@media screen and (min-width: 767px) {
+    #twikoo .tk-comments .tk-meta-input {
+        width: calc(100% - 10.8rem);
+    }
+}
+
+.tk-preview-container {
+    background-color: var(--anzhiyu-card-bg);
+    margin-left: 0 !important;
+}
+
+#twikoo .tk-preview-container pre {
+    background: #272822;
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+}
+
+[data-theme=light] #twikoo .tk-preview-container pre {
+    background: #292d3e !important;
+    border: 1px solid #252938 !important;
+}
+
+[data-theme="dark"] #twikoo .tk-preview-container pre {
+    background: #18171d !important;
+    border: 1px solid #42444a !important;
+}
+
 /* 白天网站背景 */
 #web_bg {
     background-size: 20rem;
