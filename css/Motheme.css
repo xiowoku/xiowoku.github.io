@@ -70,13 +70,10 @@
     background-image: url(/img/bg-dark.jpg) !important;
 }
 
-/* 夜间页脚黑色透明遮罩 */
-[data-theme=dark] #footer {
-    background: rgba(0, 0, 0, 0.3) !important;
-}
-
-[data-theme=dark] #footer #footer-bar {
-    background: rgba(0, 0, 0, 0.6) !important;
+/* 白天主页分类条、即刻条、白色透明遮罩 */
+[data-theme="light"] #category-bar,
+[data-theme="light"] #bbTimeList {
+    background: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* 夜间主页文章卡片、分类条、即刻条黑色透明遮罩 */
@@ -86,21 +83,25 @@
     background: rgba(0, 0, 0, 0.6) !important;
 }
 
-/* 设置白天页脚背景 */
 @media screen and (min-width: 768px) {
 
+    /* 夜间页脚黑色透明遮罩 */
+    [data-theme=dark] #footer {
+        background: rgba(0, 0, 0, 0.3) !important;
+    }
+
+    [data-theme=dark] #footer #footer-bar {
+        background: rgba(0, 0, 0, 0.6) !important;
+    }
+
+    /* 设置白天页脚背景 */
     [data-theme=light] #footer,
     [data-theme=light] #footer-wrap {
         background: rgba(255, 255, 255, 0.3) !important;
     }
-}
 
-/* 白天主页分类条、即刻条、页脚白色透明遮罩 */
-@media screen and (min-width: 768px) {
-
-    [data-theme="light"] #category-bar,
-    [data-theme="light"] #bbTimeList,
-    [data-theme=light] #footer-bar {
+    /* 页脚白色透明遮罩 */
+    [data-theme=light] #footer #footer-bar {
         background: rgba(255, 255, 255, 0.9) !important;
     }
 }
