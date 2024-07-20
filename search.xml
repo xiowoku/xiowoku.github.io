@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>类原生安卓网络和时间修复</title>
+      <link href="/posts/2c81e055/"/>
+      <url>/posts/2c81e055/</url>
+      <cover>https://bu.dusays.com/2024/07/18/6698ab0bc5ec3.png</cover>
+      <date>Wed%20Jul%2017%202024%2017:26:05%20GMT+0800</date>
+      
+        <content type="html"><![CDATA[一些类原生的「captiveportal」服务器和ntp用的是国外服务器，而由于众所周知由于一些原因导致国内无法访问，就会出先wifi受限无法连接叹号(无法自动连接wifi)以及无法自动同步时间的问题[链接]去除wifi受限无法连接叹号[链接]captivemgr清除x和!(root)[图片]captivemgr清除x和!3.2：[链接]密码:3jcs使用方法：授权root权限然后下划，找到服务器测试工具，点击测速根据延迟选择备选服务器，选择完后点击上面captiveportal服务器的应用，最后点击最下面的刷新图标即可[链接]使用adb命令(未root)android7.0之前的系统，执行以下命令：[代码块][代码块]android7.0之后的系统，执行以下命令：[代码块][代码块][代码块][代码块]上述使用的是小米服务器[链接]修复无法自动同步时间[链接]ntp服务修改器(root)[图片]ntp服务修改器：[链接]密码:2egc使用方法：打开软件，选择使用推荐的ntp服务器，点击立即修改，最后点击立即同步。这里默认是苹果的ntp服务器，当然你也可以自己去找可用服务器地址。[链接]使用adb命令(未root)adb执行以下命令[代码块][代码块]上述使用pool.ntp.org的ntp服务器]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+          <category> Android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+            <tag> 类原生 </tag>
+            
+            <tag> Android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决网站 URL 加个 index.html 后 Twikoo 评论显示问题</title>
+      <link href="/posts/81160ed8/"/>
+      <url>/posts/81160ed8/</url>
+      <cover>https://bu.dusays.com/2024/06/09/6665c6ec80b0c.png</cover>
+      <date>Sun%20May%2026%202024%2013:44:00%20GMT+0800</date>
+      
+        <content type="html"><![CDATA[[链接]前言我在浏览twikoo评论时发现有一个评论不知道为什么在后台可以看到，在文章评论区却看不到，跳转后发现来自posts&#x2f;261f&#x2f;index.html于是便有了这个解决此问题文章方法参考[链接][链接]问题使用用hexo-abbrlink插件生成的链接格式有两种选择[代码块][代码块]但是使用第二种不带html结尾的格式会遇到一个问题，它是可以在后面加个index.html的！[代码块][代码块]这就导致两个链接都能正常指向文章而这时问题就来了twikoo是以url区分页面并获取评论数据的，这就导致一个文章会有两个评论数据而且互不可见，影响挺大的[链接]解决措施[链接]更正评论显示位置直接修改数据表，或在twikoo导出评论json数据使用代码编辑器将相关评论中的url、href字段中的index.html删除，然后重新导入[链接]解决twikoo评论显示问题在twikoo初始函数的时候添加[代码块][代码块]butterfly主题可以在路径themes\butterfly\layout\includes\third-party\comments\twikoo.pug进行修改，其他主题找到twikoo相关文件的代码中加入即可[代码块][代码块]现在即使再通过index.html访问文章，他请求的数据都是不带index.html的了，这样他响应的评论数据都是一样的了[链接]尾声至此问题应该算解决了不过新站还是建议使用第一个以.html结尾的链接格式（主要是我不喜欢带这个结尾]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> Twikoo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Front-matter 的基本认识</title>
+      <link href="/posts/5f7448b7/"/>
+      <url>/posts/5f7448b7/</url>
+      <cover>https://bu.dusays.com/2024/05/26/66522fa956e74.png</cover>
+      <date>Sat%20May%2025%202024%2017:04:00%20GMT+0800</date>
+      
+        <content type="html"><![CDATA[注：本文摘抄于[链接]留以自用o(｀ω´)o[链接]front-matter的基本认识front-matter是markdown文件最上方以---分隔的区域，用于指定个别档案的变数。其中又分为两种pagefront-matter用于页面配置postfront-matter用于文章页配置tips：如果标注可选的参数，可根据自己需要添加，不用全部都写在markdown里page_front-matterpost_front-matter[代码块][代码块][代码块][代码块][链接]pagefront-matter写法解释title【必需】页面标题date【必需】页面创建日期type【必需】标签、分类、关于、音乐馆、友情链接、相册、相册详情、朋友圈、即刻页面需要配置updated【可选】页面更新日期description【可选】页面描述keywords【可选】页面关键字comments【可选】显示页面评论模块(默认true)top_img【可选】页面顶部图片mathjax【可选】显示mathjax(当设置mathjax的per_page:false时，才需要配置，默认false)katex【可选】显示katex(当设置katex的per_page:false时，才需要配置，默认false)aside【可选】显示侧边栏(默认true)aplayer【可选】在需要的页面加载aplayer的js和css,请参考文章下面的音乐配置highlight_shrink【可选】配置代码框是否展开(true&#x2f;false)(默认为设置中highlight_shrink的配置)top_single_background【可选】部分页面的顶部模块背景图片[链接]postfront-matter写法解释title【必需】文章标题date【必需】文章创建日期updated【可选】文章更新日期tags【可选】文章标签categories【可选】文章分类keywords【可选】文章关键字description【可选】文章描述top_img【可选】文章顶部图片cover【可选】文章缩略图(如果没有设置top_img,文章页顶部将显示缩略图，可设为false&#x2f;图片地址&#x2f;留空)comments【可选】显示文章评论模块(默认true)toc【可选】显示文章toc(默认为设置中toc的enable配置)toc_number【可选】显示toc_number(默认为设置中toc的number配置)toc_style_simple【可选】显示toc简洁模式copyright【可选】显示文章版权模块(默认为设置中post_copyright的enable配置)copyright_author【可选】文章版权模块的文章作者copyright_author_href【可选】文章版权模块的文章作者链接copyright_url【可选】文章版权模块的文章链接链接copyright_info【可选】文章版权模块的版权声明文字mathjax【可选】显示mathjax(当设置mathjax的per_page:false时，才需要配置，默认false)katex【可选】显示katex(当设置katex的per_page:false时，才需要配置，默认false)aplayer【可选】在需要的页面加载aplayer的js和css,请参考文章下面的音乐配置highlight_shrink【可选】配置代码框是否展开(true&#x2f;false)(默认为设置中highlight_shrink的配置)aside【可选】显示侧边栏(默认true)swiper_index【可选】首页轮播图配置index索引，数字越小越靠前top_group_index【可选】首页右侧卡片组配置,数字越小越靠前ai【可选】文章ai摘要main_color【可选】文章主色，必须是16进制颜色且有6位，不可缩减，例如#ffffff不可写成#fff首页轮播图配置:swiper_index,数字越小越靠前首页卡片配置:top_group_index,数字越小越靠前page中top_single_background,可配置部分页面的顶部背景图片只需要在你的文章顶部的front-matter配置这swiper_index和top_group_index两个字段即可显示轮播图和推荐卡片]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> MarkDown </tag>
+            
+            <tag> Front-matter </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用fastgithub解决GitHub无法访问</title>
+      <link href="/posts/cba8/"/>
+      <url>/posts/cba8/</url>
+      <cover>https://bu.dusays.com/2024/02/05/65c0dffa20f18.png</cover>
+      <date>Mon%20Feb%2005%202024%2021:11:25%20GMT+0800</date>
+      
+        <content type="html"><![CDATA[之前发现的一个实用的工具，用来加速github,挺好用的，分享一下(^▽^)注：此工具只适用于windowsgithub[链接]为了防止出现把钥匙锁在家里的情况，这里留个蓝奏云地址蓝奏云地址：[链接]]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GitHub加速 </tag>
+            
+            <tag> fastgithub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>主题标签 Tag Plugins</title>
+      <link href="/posts/8934/"/>
+      <url>/posts/8934/</url>
+      <cover>https://bu.dusays.com/2024/02/02/65bc9a5050625.png</cover>
+      <date>Fri%20Feb%2002%202024%2015:08:49%20GMT+0800</date>
+      
+        <content type="html"><![CDATA[记录一些有用的，转载自[链接][链接]段落文本p标签语法配置参数样式预览示例源码[代码块][代码块]字体:logo,code颜色:red,yellow,green,cyan,blue,gray大小:small,h4,h3,h2,h1,large,huge,ultra对齐方向:left,center,right彩色文字在一段话中方便插入各种颜色的标签，包括：红色、黄色、绿色、青色、蓝色、灰色。超大号文字文档「开始」页面中的标题部分就是超大号文字。volantisawonderfulthemeforhexo[代码块][代码块][链接]行内文本span标签语法配置参数样式预览示例源码[代码块][代码块]字体:logo,code颜色:red,yellow,green,cyan,blue,gray大小:small,h4,h3,h2,h1,large,huge,ultra对齐方向:left,center,right彩色文字在一段话中方便插入各种颜色的标签，包括：红色、黄色、绿色、青色、蓝色、灰色。超大号文字文档「开始」页面中的标题部分就是超大号文字。volantisawonderfulthemeforhexo[代码块][代码块][链接]行内文本样式text标签语法样式预览示例源码[代码块][代码块]带下划线的文本带着重号的文本带波浪线的文本带删除线的文本键盘样式的文本command+d密码样式的文本：这里没有验证码[代码块][代码块][链接]分栏tab分栏支持内置阿里图标，如果开启了fontawesome可以使用fontawesome的图标，否则只能使用默内置阿里图标标签语法配置参数样式预览示例源码[代码块][代码块]uniquename:选项卡块标签的唯一名称，不带逗号。将在#id中用作每个标签及其索引号的前缀。如果名称中包含空格，则对于生成#id，所有空格将由破折号代替。仅当前帖子&#x2f;页面的url必须是唯一的！[index]:活动选项卡的索引号。如果未指定，将选择第一个标签（1）。如果index为-1，则不会选择任何选项卡。可选参数。[tabcaption]:当前选项卡的标题。如果未指定标题，则带有制表符索引后缀的唯一名称将用作制表符的标题。如果未指定标题，但指定了图标，则标题将为空。可选参数。[@icon]:-fontawesome图标名称（全名，看起来像“fasfa-font”）-可以指定带空格或不带空格；-例如’tabcaption@icon’和‘tabcaption@icon’.-可选参数。demo1-预设选择第一个【默认】test11test12test13thisistab1.thisistab2.thisistab3.demo2-预设选择tabstest21test22test23thisistab1.thisistab2.thisistab3.demo3-没有预设值test31test32test33thisistab1.thisistab2.thisistab3.demo4-自定义tab名+只有icon+icon和tab名第一个tab炸弹tab名字为第一个tab只有图标没有tab名字名字+icondemo1-预设选择第一个【默认】[代码块][代码块]demo2-预设选择tabs[代码块][代码块]demo3-没有预设值[代码块][代码块]demo4-自定义tab名+只有icon+icon和tab名[代码块][代码块][链接]按钮btns标签语法参数配置样式预览示例源码[代码块][代码块]圆角样式：rounded,circle增加文字样式：可以在容器内增加&lt;b&gt;标题&lt;/b&gt;和&lt;p&gt;描述文字&lt;/p&gt;布局方式：默认为自动宽度，适合视野内只有一两个的情况。参数含义wide宽一点的按钮fill填充布局，自动铺满至少一行，多了会换行center居中，按钮之间是固定间距around居中分散grid2等宽最多2列，屏幕变窄会适当减少列数grid3等宽最多3列，屏幕变窄会适当减少列数grid4等宽最多4列，屏幕变窄会适当减少列数grid5等宽最多5列，屏幕变窄会适当减少列数如果需要显示类似「团队成员」之类的一组含有头像的链接：[链接][链接][链接][链接][链接]或者含有图标的按钮：[链接][链接]圆形图标+标题+描述+图片+网格5列+居中[链接][链接]如果需要显示类似「团队成员」之类的一组含有头像的链接：[代码块][代码块]或者含有图标的按钮：[代码块][代码块]圆形图标+标题+描述+图片+网格5列+居中[代码块][代码块][链接]按钮btn标签语法参数配置样式预览示例源码[代码块][代码块]参数含义url链接text按钮文字icon[可选]图标，如果开启了fontawesome可以使用fontawesome的图标，否则只能使用默内置图标color[可选]按钮背景顔色(默认style时）按钮字体和边框顔色(outline时)default&#x2f;blue&#x2f;pink&#x2f;red&#x2f;purple&#x2f;orange&#x2f;greenstyle[可选]按钮样式默认实心数，outline&#x2f;留空layout[可选]按钮佈局默认为lineblock&#x2f;留空position[可选]按钮位置前提是设置了layout为block默认为左边center&#x2f;right&#x2f;留空数size[可选]按钮大小larger&#x2f;留空一组按钮thisismywebsite,clickthebutton[链接]thisismywebsite,clickthebutton[链接]thisismywebsite,clickthebutton[链接]thisismywebsite,clickthebutton[链接]thisismywebsite,clickthebutton[链接]调整位置&#x2f;大小[链接][链接][链接]morethanonebuttonincenter[链接][链接][链接][链接][链接][链接][链接]居中按钮[链接][链接][链接][链接][链接][链接][链接]一组按钮[代码块][代码块]调整位置&#x2f;大小[代码块][代码块]morethanonebuttonincenter[代码块][代码块]居中按钮[代码块][代码块][链接]网站卡片sites标签语法样式预览示例源码[代码块][代码块][链接][链接][链接][代码块][代码块][链接]单张图片image标签语法参数配置样式预览示例源码[代码块][代码块]图片宽度高度：width&#x3d;300px,height&#x3d;32px图片描述：alt&#x3d;图片描述（butterfly需要在主题配置文件中开启图片描述）占位背景色：bg&#x3d;#f2f2f2添加描述：[图片]每天下课回宿舍的路，没有什么故事。指定宽度：[图片]指定宽度并添加描述：[图片]每天下课回宿舍的路，没有什么故事。设置占位背景色：[图片]优化不同宽度浏览的观感添加描述：[代码块][代码块]指定宽度：[代码块][代码块]指定宽度并添加描述：[代码块][代码块]设置占位背景色：[代码块][代码块][链接]inlineimg行内图片标签语法参数配置样式预览示例源码[代码块][代码块]参数含义src图片链接height图片高度限制【可选】你看我长得漂亮不[图片]我觉得很漂亮[图片][代码块][代码块][链接]行内图片inlineimage标签语法参数配置样式预览示例源码[代码块][代码块]高度：height&#x3d;20px这是[图片]一段话。这又是[图片]一段话。[代码块][代码块][链接]label标签标签语法参数配置样式预览示例源码[代码块][代码块]参数含义text文字color【可选】背景颜色，默认为default，default&#x2f;blue&#x2f;pink&#x2f;red&#x2f;purple&#x2f;orange&#x2f;green臣亮言：先帝创业未半，而中道崩殂。今天下三分，益州疲敝，此诚危急存亡之秋也！然侍衞之臣，不懈于内；忠志之士，忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气；不宜妄自菲薄，引喻失义，以塞忠谏之路也。宫中、府中，俱为一体；陟罚臧否，不宜异同。若有作奸、犯科，及为忠善者，宜付有司，论其刑赏，以昭陛下平明之治；不宜偏私，使内外异法也。[代码块][代码块][链接]timeline标签语法参数配置样式预览示例源码[代码块][代码块]参数含义title标题&#x2f;时间线colortimeline颜色，default(留空)&#x2f;blue&#x2f;pink&#x2f;red&#x2f;purple&#x2f;orange&#x2f;green默认颜色202201-02这是测试页面blue202201-02这是测试页面pink202201-02这是测试页面red202201-02这是测试页面purple202201-02这是测试页面orange202201-02这是测试页面green202201-02这是测试页面默认颜色[代码块][代码块]blue[代码块][代码块]pink[代码块][代码块]red[代码块][代码块]purple[代码块][代码块]orange[代码块][代码块]green[代码块][代码块][链接]flink友链标签可在任何界面插入类似友情链接列表效果，内容格式与友情链接界面一样，支持yml格式,注意yml数据具有格式要求，请注意格式对齐，防止被编辑器格式化导致格式错误从而报错。标签语法参数配置样式预览示例源码[代码块][代码块]参数含义class_nameh2标题flink_style【可选】友链样式，默认为flexcard，flexcard&#x2f;anzhiyulink_list【可选】友链样式，默认为flexcard，flexcard&#x2f;anzhiyu推荐博客[链接]网站值得推荐的网站[链接][链接][链接][代码块][代码块][链接]mermaid图使用mermaid标签可以绘制flowchart（流程图）、sequencediagram（时序图）、classdiagram（类别图）、statediagram（状态图）、gantt（甘特图）和piechart（圆形图），具体可以查看[链接]修改主题配置文件[代码块][代码块]标签语法样式预览示例源码[代码块][代码块][图片][代码块][代码块][链接]复选列表checkbox标签语法配置参数样式预览示例源码[代码块][代码块]样式:plus,minus,times颜色:red,yellow,green,cyan,blue,gray选中状态:checked纯文本测试支持简单的[链接]语法支持自定义颜色绿色+默认选中黄色+默认选中青色+默认选中蓝色+默认选中增加减少叉[代码块][代码块][链接]dogeplayer多吉云播放器快捷引入[链接]标签语法参数配置样式预览示例源码[代码块][代码块]获取userid与vcode[图片]参数含义userid多吉云useridvcode视频vcode[图片][代码块][代码块][链接]折叠框folding折叠框folding标签语法配置参数样式预览示例源码[代码块][代码块]颜色：blue,cyan,green,yellow,red状态：状态填写open代表默认打开。查看图片测试[图片]查看默认打开的折叠框这是一个默认打开的折叠框。查看代码测试[代码块][代码块]查看列表测试hahahehe查看嵌套测试查看嵌套测试2查看嵌套测试3hahaha[图片][代码块][代码块][链接]gallery相册图库一个图库集合。标签语法参数配置样式预览示例源码gallerygroup相册图库[代码块][代码块]gallery相册本地远程[代码块][代码块]参数名释义lazyload【可选】点击按钮加载更多图片，填写true&#x2f;false。默认为false。rowheight【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为220。limit【可选】每次加载多少张照片。默认为10。[代码块][代码块]参数名释义url【必须】识别词link【必须】远程的json链接lazyload【可选】点击按钮加载更多图片，填写true&#x2f;false。默认为false。rowheight【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为220。limit【可选】每次加载多少张照片。默认为10。远程链接json的例子有三个参数，url是必须存在的，alt和title可有，也可没有。[代码块][代码块]示例[代码块][代码块]gallerygroup相册图库参数名释义name图库名字description图库描述link链接到对应相册的地址img-url图库封面思维拓展一下，相册图库的实质其实就是个快捷方式，可以自定义添加描述、封面、链接。那么我们未必要把它当做一个相册，完全可以作为一个链接卡片，链接到视频、qq、友链都是不错的选择。gallery相册区别于旧版的gallery相册,新的gallery相册会自动根据图片长度进行排版，书写也更加方便，与markdown格式一样。可根据需要插入到相应的md。无需再自己配置长宽。建议在粘贴时故意使用长短、大小、横竖不一的图片，会有更好的效果。（尺寸完全相同的图片只会平铺输出，效果很糟糕）本地远程[代码块][代码块]参数名释义lazyload【可选】点击按钮加载更多图片，填写true&#x2f;false。默认为false。rowheight【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为220。limit【可选】每次加载多少张照片。默认为10。[代码块][代码块]参数名释义url【必须】识别词link【必须】远程的json链接lazyload【可选】点击按钮加载更多图片，填写true&#x2f;false。默认为false。rowheight【可选】图片显示的高度，如果需要一行显示更多的图片，可设置更小的数字。默认为220。limit【可选】每次加载多少张照片。默认为10。远程链接json的例子有三个参数，url是必须存在的，alt和title可有，也可没有。[代码块][代码块]示例[代码块][代码块]gallerygroup相册图库[图片]mc在rikkaの六花服务器里留下的足迹[链接][图片]gundam哦咧哇gundam哒！[链接][图片]i-am-akilar某种意义上也算自拍吧[链接]gallery相册[{"url":"https://bu.dusays.com/2023/06/01/647896b15759c.jpg","alt":""},{"url":"https://bu.dusays.com/2023/06/01/647896cabde59.jpg","alt":""},{"url":"https://bu.dusays.com/2023/06/01/647896eb0f3ea.jpg","alt":""},{"url":"https://bu.dusays.com/2023/06/01/647896ed810b3.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/6nepij1xtgufatz.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/e7jvr4eipwunmzq.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/mh19anwbswikglh.jpg","alt":""},{"url":"https://i.loli.net/2019/12/25/2tu9jc8ewpbfagv.jpg","alt":""}]加载更多对于很多同学提问的gallerygroup和gallery相册页的链接问题。这里说下我个人的使用习惯。一般使用相册图库的话，可以在导航栏加一个gallery的page(使用指令hexonewpagegallery添加)，里面放相册图库作为封面。然后在[blogroot]/source/gallery/下面建立相应的文件夹，例如若按照这里的示例，若欲使用/gallery/mc/路径访问mc相册，则需要新建[blogroot]/source/gallery/mc/index.md，并在里面填入gallery相册内容。注意⚠️：本站相册集为单独优化，可参考[链接]。gallerygroup相册图库[代码块][代码块]gallery相册[代码块][代码块][链接]tag-hide如果你想把一些文字、内容隐藏起来，并提供按钮让用户点击显示。可以使用这个标签外挂。请注意，tag-hide内的标签外挂content内都不建议有h1-h6等标题。因为toc会把隐藏内容标题也显示出来，而且当滚动屏幕时，如果隐藏内容没有显示出来，会导致toc的滚动出现异常。inlineblocktoggleinline在文本里面添加按钮隐藏内容，只限文字(content不能包含英文逗号，可用&amp;sbquo;)[代码块][代码块]content:文本内容display:按钮显示的文字(可选)bg:按钮的背景颜色(可选)color:按钮文字的颜色(可选)demo[代码块][代码块]哪个英文字母最酷？查看答案因为西装裤(c装酷)门里站着一个人?click闪block独立的block隐藏内容，可以隐藏很多内容，包括图片，代码块等等(display不能包含英文逗号，可用&amp;sbquo;)[代码块][代码块]content:文本内容display:按钮显示的文字(可选)bg:按钮的背景颜色(可选)color:按钮文字的颜色(可选)demo[代码块][代码块]查看答案查看答案傻子，怎么可能有答案如果你需要展示的内容太多，可以把它隐藏在收缩框里，需要时再把它展开。(display不能包含英文逗号，可用&amp;sbquo;)[代码块][代码块]demoanzhiyu主题安装方法在你的博客根目录里gitclone-bmaster[链接]themes&#x2f;anzhiyu如果想要安装比较新的dev分支，可以gitclone-bdev[链接]themes&#x2f;anzhiyu[链接]链接卡片link标签语法样式预览示例源码[代码块][代码块][链接][代码块][代码块][链接]单选列表radio标签语法配置参数样式预览示例源码[代码块][代码块]颜色:red,yellow,green,cyan,blue,gray选中状态:checked纯文本测试支持简单的[链接]语法支持自定义颜色绿色黄色青色蓝色[代码块][代码块][链接]上标标签tip主要样式参考自[链接]标签语法配置参数样式预览示例源码[代码块][代码块]样式:success,error,warning,bolt,ban,home,sync,cogs,key,bell自定义图标:支持fontawesome。defaultinfosuccesserrorwarningboltbanhomesynccogskeybell自定义fontawesome图标[代码块][代码块][链接]note(bootstrapcallout)通用配置语法格式配置参数样式预览示例源码修改主题配置文件[代码块][代码块]note标签外挂有两种用法。icons和light_bg_offset只对方法一生效。fontawesome图标需开启主题配置文件中icons.fontawesome方法一[代码块][代码块]方法二[代码块][代码块]方法一参数用法class【可选】标识，不同的标识有不同的配色（default&#x2f;primary&#x2f;success&#x2f;info&#x2f;warning&#x2f;danger）no-icon【可选】不显示iconstyle【可选】可以覆盖配置中的style（simple&#x2f;modern&#x2f;flat&#x2f;disabled）方法二参数用法class【可选】标识，不同的标识有不同的配色（default&#x2f;blue&#x2f;pink&#x2f;red&#x2f;purple&#x2f;orange&#x2f;green）no-icon【可选】可配置自定义icon(支持fontawesome图标和主题内置的阿里图标,fontawesome图标需开启主题配置文件中icons.fontawesome,也可以配置no-icon)style【可选】可以覆盖配置中的style（simple&#x2f;modern&#x2f;flat&#x2f;disabled）方法一simple样式默认提示块标签default提示块标签primary提示块标签success提示块标签info提示块标签warning提示块标签danger提示块标签modern样式默认提示块标签default提示块标签primary提示块标签success提示块标签info提示块标签warning提示块标签danger提示块标签flat样式默认提示块标签default提示块标签primary提示块标签success提示块标签info提示块标签warning提示块标签danger提示块标签disabled样式默认提示块标签default提示块标签primary提示块标签success提示块标签info提示块标签warning提示块标签danger提示块标签no-icon样式默认提示块标签default提示块标签primary提示块标签success提示块标签info提示块标签warning提示块标签danger提示块标签方法二图标支持fontawesome和主题内置的阿里图标，使用方法为加上对应的类名，fontawesome图标需开启主题配置文件中icons.fontawesome，默认未开启fontawesomesimple样式主题内置阿里图标你是刷visa还是unionpay2022年快到了….小心开车安全至上这是三片呢？还是四片？你是刷visa还是unionpay剪刀石头布前端最讨厌的浏览器fontawesome图标，开启主题配置文件中的icons.fontawesome为true后可见你是刷visa还是unionpay2022年快到了….小心开车安全至上这是三片呢？还是四片？你是刷visa还是unionpay剪刀石头布前端最讨厌的浏器modern样式主题内置阿里图标你是刷visa还是unionpay2022年快到了….小心开车安全至上这是三片呢？还是四片？你是刷visa还是unionpay剪刀石头布前端最讨厌的浏览器fontawesome图标，开启主题配置文件中的icons.fontawesome为true后可见你是刷visa还是unionpay2021年快到了….小心开车安全至上这是三片呢？还是四片？你是刷visa还是unionpay剪刀石头布前端最讨厌的浏览器flat样式主题内置阿里图标你是刷visa还是unionpay2022年快到了….小心开车安全至上这是三片呢？还是四片？你是刷visa还是unionpay剪刀石头布前端最讨厌的浏览器fontawesome图标，开启主题配置文件中的icons.fontawesome为true后可见你是刷visa还是unionpay2021年快到了….小心开车安全至上这是三片呢？还是四片？你是刷visa还是unionpay剪刀石头布前端最讨厌的浏览器disabled样式主题内置阿里图标你是刷visa还是unionpay2022年快到了….小心开车安全至上这是三片呢？还是四片？你是刷visa还是unionpay剪刀石头布前端最讨厌的浏览器fontawesome图标，开启主题配置文件中的icons.fontawesome为true后可见你是刷visa还是unionpay2021年快到了….小心开车安全至上这是三片呢？还是四片？你是刷visa还是unionpay剪刀石头布前端最讨厌的浏览器no-icon样式你是刷visa还是unionpay2021年快到了….小心开车安全至上这是三片呢？还是四片？你是刷visa还是unionpay剪刀石头布前端最讨厌的浏览器方法一simple样式[代码块][代码块]modern样式[代码块][代码块]flat样式[代码块][代码块]disabled样式[代码块][代码块]no-icon样式[代码块][代码块]方法二图标支持fontawesome和主题内置的阿里图标，使用方法为加上对应的类名，fontawesome图标需开启主题配置文件中icons.fontawesome，默认未开启fontawesomesimple样式主题内置阿里图标[代码块][代码块]fontawesome图标，开启主题配置文件中的icons.fontawesome为true后可见[代码块][代码块]modern样式主题内置阿里图标[代码块][代码块]fontawesome图标，开启主题配置文件中的icons.fontawesome为true后可见[代码块][代码块]flat样式主题内置阿里图标[代码块][代码块]fontawesome图标，开启主题配置文件中的icons.fontawesome为true后可见[代码块][代码块]disabled样式主题内置阿里图标[代码块][代码块]fontawesome图标，开启主题配置文件中的icons.fontawesome为true后可见[代码块][代码块]no-icon样式[代码块][代码块][链接]音频audio标签语法样式预览示例源码[代码块][代码块][链接]视频video标签语法参数配置样式预览示例源码[代码块][代码块]对其方向：left,center,right列数：逗号后面直接写列数，支持1～4列。100%宽度[图片]50%宽度[图片]25%宽度[图片]100%宽度[代码块][代码块]50%宽度[代码块][代码块]25%宽度[代码块][代码块]]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> Tag Plugins </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Surface“幽灵触控”解决方法</title>
+      <link href="/posts/179cdf12/"/>
+      <url>/posts/179cdf12/</url>
+      <cover>https://api.qjqq.cn/api/Img</cover>
+      <date>Wed%20Aug%2023%202023%2020:54:28%20GMT+0800</date>
+      
+        <content type="html"><![CDATA[巨硬的产品真的太容易坏了，已经退坑了😵‍💫记个修复surface幽灵触控的工具快被这幽灵触控高气死了，不过经过我科学的使用搜索工具找到了一个办法，亲测有用，但是能管多久我就不清楚了¿相关文章地址：[链接][链接]我的surface型号设备型号：surfacepro5版本：microsoftwindows11专业工作站版os版本：10.0.22621.1992os体系结构：64位bios版本&#x2f;日期：239.645.7682015&#x2f;04&#x2f;05处理器：intel(r)core(tm)i5-7300ucpu@2.60ghz[链接]注意事项断开电源连接donotsubmittoflorescentlight（可能是别调背光？）在室温下操作不要触碰屏幕！！不过还是最好移除除键盘外的外接设备什么都不动[链接]end这个工具挺好用的，屏幕终于正常了qwq后续：屏幕两块区域断触，排查是小板问题，更换触摸小板解决qwq-23.8.30]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+            <tag> surface </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>雨世界地图(简体中文)</title>
+      <link href="/posts/1b7c/"/>
+      <url>/posts/1b7c/</url>
+      <cover>https://bu.dusays.com/2024/02/20/65d473a8f292c.png</cover>
+      <date>Tue%20Aug%2022%202023%2021:29:36%20GMT+0800</date>
+      
+        <content type="html"><![CDATA[[链接]关于地图一个在线互动地图，包括雨世界:倾盆大雨中的每个地区和每个蛞蝓猫。此地图包含【雨世界】以及【雨世界dlc：倾盆大雨】rain-world-map-simplifiedchinese[链接]⚠️警告⚠️由于giteepages停止服务原地址[链接]已弃用地图迁至[链接]由于不知道giteepages什么时候恢复，于是就创了个github团队fork过去了，问题应该不大qwq⚠️由于部分地区dns污染无法访问github,win可使用[链接]加速[链接]仓库[链接]|[链接][链接]参考项目：这个是我在学习html和css的时候做的，修改和参考自以下优秀的开源项目-[链接]-[链接]-[链接][链接]用到的资源：背景素材-[链接]图片素材-[链接]-[链接][链接]关于雨世界你可以查看:-[链接]改的烂，不要介意|ू･ω･&#96;)[图片][图片][链接]修改记录此记录将不再更新，请前往[链接]查看不是我懒，是因为我基本都是随缘更新，版本号意义不大(doge)修改记录(已弃用)202405-25⚠️警告⚠️由于giteepages停止服务原地址[链接]已弃用地图迁至[链接]02-141.2.4优化结构o(￣▽￣)o02-051.2.3添加地图资源地址切换功能(仅倾盆大雨的地图有)02-051.2.2添加了一些东西，修正了一些错误，‘优化’代码202311-171.2.1修正一些错误，补充并微调了一些东西11-041.2.0新增怪猫地图、更多地图展示的物品rw-map页面新增蛞蝓猫、地图标识、物品的简单描述前端文件部署至giteepages10-051.1.0新增原版地图和rw-map页面加了点乱七八糟的东西╰(°▽°)╯8-221.0.0把地图翻译了一下，基本没变]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目 </category>
+          
+          <category> 前端 </category>
+          
+          <category> 游戏 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> RainWorld </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Twikoo 添加自定义表情包</title>
+      <link href="/posts/759e8c74/"/>
+      <url>/posts/759e8c74/</url>
+      <cover>https://bu.dusays.com/2023/07/31/64c787012854a.png</cover>
+      <date>Mon%20Jul%2031%202023%2017:17:22%20GMT+0800</date>
+      
+        <content type="html"><![CDATA[最近刚把博客搭好，看别人的twikoo都自定义表情包，于是我也研究了一下[链接]可能用到的大佬整理的表情包：[链接][链接][链接]修改twikoo的表情使用的是owo,所以表情配置为一个json文件json文件对格式要求严格，例如键与值都需要使用双引号进行包裹，如果是最后一项那么结尾不能包含逗号，可见[链接]不过我们目前不需要了解那么深入在表情速查里复制twikoo适配的json代码，以阿鲁为例：[代码块][代码块]复制多个记得做修改，删除上一个表情末尾的一个&#125;然后添加,再把第二个开头的&#123;删除，以阿鲁和blob为例：[代码块][代码块]可以前往[链接]检查是否有误[链接]额外如果你想选择表情包显示图标而不是文字，你可以修改开头部分[图片]文字版：[代码块][代码块]图片版：[代码块][代码块]最后将json文件上传服务器即可[链接]twikoo配置进入你的twikoo控制台找到插件&gt;emotion_cdn填入你的json链接[图片]上面那个show_emotion可以不用设置因为它默认就是true]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> Twikoo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SEO优化：Hexo-abbrlink插件生成永久固定链接</title>
+      <link href="/posts/a1e8a28a/"/>
+      <url>/posts/a1e8a28a/</url>
+      <cover>https://bu.dusays.com/2023/07/23/64bca1d9e8b44.png</cover>
+      <date>Sun%20Jul%2023%202023%2009:54:17%20GMT+0800</date>
+      
+        <content type="html"><![CDATA[[链接]hexo-abbrlink把博客的链接优化了一下，终于不是托一大串了（￣︶￣）↗对于abbrlik插件可详见项目源地址：[链接]视频教程可见安知鱼大佬的b站视频[链接]安装[代码块][代码块]修改hexoconfig.yml文件中的永久链接为[代码块][代码块]将以下内容复制到hexoconfig.yml的最底下[代码块][代码块][链接]生成链接示例[代码块][代码块][代码块][代码块][链接]注意对于先前已有文章的，请使用hexoclean清除以前生成的文章缓存，然后hexog重新渲染即可]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+            <tag> seo </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> abbrlink </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>终于把hexo博客整好啦~</title>
+      <link href="/posts/261f/"/>
+      <url>/posts/261f/</url>
+      <cover>/img/default_cover.jpg</cover>
+      <date>Wed%20Jul%2012%202023%2009:06:45%20GMT+0800</date>
+      
+        <content type="html"><![CDATA[[链接]helloworld!你好访客！这里是沫(mo)~如你所见这是我水的第一篇文章日后可能会做(?)水文章写教程分享感想摸鱼(?)当然之后的文章肯定都是人写的（虽然写的烂）[图片]ai摘要只会出现在教程类的文章，但生活和其他的文章是不会启用的[链接]最后这里是我的记事簿，可能会有日常趣事的分享(?)不过你应该可以在这里找到对你有用的知识和教程⸜(๑’ᵕ’๑)⸝⋆*。[代码块][代码块]——mo和mu2023.7.16]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> HelloWorld! </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
