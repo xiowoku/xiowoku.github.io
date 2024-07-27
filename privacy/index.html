@@ -132,7 +132,7 @@
       diytitle: { "enable": true, "leaveTitle": "╰(*°▽°*)╯此页被吃掉啦！", "backTitle": "ヾ(^▽^*)))骗你哒！" },
       LA51: { "enable": true, "ck": "3FFJp6Tw9pfKJ5ZM", "LingQueMonitorID": "3FFJp6Tw9pfKJ5ZM" },
       greetingBox: { "enable": true, "default": "晚上好👋", "list": [{ "greeting": "晚安😴", "startTime": 0, "endTime": 5 }, { "greeting": "早上好鸭👋, 祝你一天好心情！", "startTime": 6, "endTime": 9 }, { "greeting": "上午好👋, 状态很好，鼓励一下～", "startTime": 10, "endTime": 10 }, { "greeting": "11点多啦, 在坚持一下就吃饭啦～", "startTime": 11, "endTime": 11 }, { "greeting": "午安👋, 宝贝", "startTime": 12, "endTime": 14 }, { "greeting": "🌈充实的一天辛苦啦！", "startTime": 14, "endTime": 18 }, { "greeting": "19点喽, 奖励一顿丰盛的大餐吧🍔。", "startTime": 19, "endTime": 19 }, { "greeting": "晚上好👋, 在属于自己的时间好好放松😌~", "startTime": 20, "endTime": 24 }] },
-      twikooEnvId: 'https://twikoo.xiowo.net/.netlify/functions/twikoo/.netlify/functions/twikoo/',
+      twikooEnvId: 'https://twikoo.xiowo.net/.netlify/functions/twikoo/',
       commentBarrageConfig: { "enable": true, "maxBarrage": 1, "barrageTime": 4000, "accessToken": "e90bd298589842d1848e237b2a52d03f", "mailMd5": "421cecebf1e72b54d91e1a7ae9bc411d" },
       root: '/',
       preloader: { "source": 3 },
@@ -655,7 +655,8 @@
           <h1 class="page-title">隐私政策</h1>
           <div id="article-container">
             <p>本站非常重视用户的隐私和个人信息保护。你在使用网站时，可能会收集和使用你的相关信息。通过《隐私政策》向你说明在你访问
-              <code>blog.xiowo.net</code><br>网站时，如何收集、使用、保存、共享和转让这些信息。</p>
+              <code>blog.xiowo.net</code><br>网站时，如何收集、使用、保存、共享和转让这些信息。
+            </p>
             <h2 id="最新更新时间"><a href="#最新更新时间" class="headerlink" title="最新更新时间"></a>最新更新时间</h2>
             <p>协议最新更新时间为：2023-07-22</p>
             <h2 id="一、在访问时如何收集和使用你的个人信息"><a href="#一、在访问时如何收集和使用你的个人信息" class="headerlink"
@@ -1159,7 +1160,7 @@
                   headers: { 'Content-Type': 'application/json' }
                 }
                 danmuStore = [];
-                const response = await fetch(`https://twikoo.xiowo.net/.netlify/functions/twikoo/.netlify/functions/twikoo/`, options);
+                const response = await fetch(`https://twikoo.xiowo.net/.netlify/functions/twikoo/`, options);
                 if (response.ok) {
                   const { data } = await response.json();
                   //- console.info(data);
@@ -1217,7 +1218,7 @@
         const getComment = () => {
           const runTwikoo = () => {
             twikoo.getRecentComments({
-              envId: 'https://twikoo.xiowo.net/.netlify/functions/twikoo/.netlify/functions/twikoo/',
+              envId: 'https://twikoo.xiowo.net/.netlify/functions/twikoo/',
               region: '',
               pageSize: 6,
               includeReply: true
