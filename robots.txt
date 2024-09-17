@@ -1,0 +1,6 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://blog.xiowo.net/sitemap.xml
+Sitemap: https://blog.xiowo.net/baidusitemap.xml
