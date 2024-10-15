@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.xiowo.net/posts/f35ba82f/</loc>
+    
+    <lastmod>2024-10-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.xiowo.net/posts/1b7c/</loc>
     
     <lastmod>2024-10-13</lastmod>
@@ -256,134 +265,148 @@
 
   <url>
     <loc>https://blog.xiowo.net/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>https://blog.xiowo.net/tags/%E5%88%AE%E5%89%8A/</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.xiowo.net/tags/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/seo/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/%E7%B1%BB%E5%8E%9F%E7%94%9F/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.xiowo.net/tags/Emby/</loc>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/hexo/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/Twikoo/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/Android/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/GitHub%E5%8A%A0%E9%80%9F/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/MarkDown/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/abbrlink/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/RainWorld/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/fastgithub/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/HelloWorld/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/Tag-Plugins/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/tags/Front-matter/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -392,56 +415,63 @@
   
   <url>
     <loc>https://blog.xiowo.net/categories/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/categories/Hexo/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/categories/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/categories/%E9%A1%B9%E7%9B%AE/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/categories/%E9%A1%B9%E7%9B%AE/%E5%89%8D%E7%AB%AF/%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/categories/%E7%AC%94%E8%AE%B0/Hexo/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://blog.xiowo.net/categories/%E5%B7%A5%E5%85%B7/Android/</loc>
-    <lastmod>2024-10-13</lastmod>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.xiowo.net/categories/%E7%AC%94%E8%AE%B0/Emby/</loc>
+    <lastmod>2024-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

@@ -6,7 +6,7 @@
   <link href="https://blog.xiowo.net/atom.xml" rel="self"/>
   
   <link href="https://blog.xiowo.net/"/>
-  <updated>2024-10-03T18:08:27.317Z</updated>
+  <updated>2024-10-15T18:12:59.423Z</updated>
   <id>https://blog.xiowo.net/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>给群晖套件版Emby添加网络代理</title>
+    <link href="https://blog.xiowo.net/posts/f35ba82f/"/>
+    <id>https://blog.xiowo.net/posts/f35ba82f/</id>
+    <published>2024-10-15T09:28:47.000Z</published>
+    <updated>2024-10-15T18:12:59.423Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录一下群晖套件版Emby添加网络代理，以解决刮削问题｜д•´)!!</p><h2 id="核心原理"><a href="#核心原理" class="headerlink" title="核心原理"></a>核心原理</h2><p>编辑 套件的start-stop-status脚本，在启动时设置 HTTP_PROXY 等环境变量</p><h2 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h2><p>连接至群晖的 ssh<br>通过以下命令打开脚本</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /var/packages/EmbyServer/scripts/start-stop-status</span><br></pre></td></tr></table></figure><p>按a键进入编辑模式(下面显示–INSERT–)<br>在启动命令前添加设置HTTP_PROXY环境变量的命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> http_proxy=http://127.0.0.1:7890</span><br><span class="line"><span class="built_in">export</span> https_proxy=<span class="variable">$http_proxy</span></span><br></pre></td></tr></table></figure><p>按ECS退出编辑模式，再连续按两次大写的ZZ保存并退出当前文件<br><img src="https://bu.dusays.com/2024/10/16/670ea93f2e81c.jpg" alt="命令位置"></p><p>参考文章：</p><div calss='anzhiyu-tag-link'><a class="tag-Link" target="_blank" href="https://awalol.xlog.app/dsm-emby-proxy">    <div class="tag-link-tips">引用站外地址</div>    <div class="tag-link-bottom">        <div class="tag-link-left" style="">          <i class="anzhiyufont anzhiyu-icon-link" style=""></i>        </div>        <div class="tag-link-right">            <div class="tag-link-title">给群晖的套件版Emby添加网络代理</div>            <div class="tag-link-sitename">awalol</div>        </div>        <i class="anzhiyufont anzhiyu-icon-angle-right"></i>    </div>    </a></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;记录一下群晖套件版Emby添加网络代理，以解决刮削问题｜д•´)!!&lt;/p&gt;
+&lt;h2 id=&quot;核心原理&quot;&gt;&lt;a href=&quot;#核心原理&quot; class=&quot;headerlink&quot; title=&quot;核心原理&quot;&gt;&lt;/a&gt;核心原理&lt;/h2&gt;&lt;p&gt;编辑 套件的start-stop-sta</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://blog.xiowo.net/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Emby" scheme="https://blog.xiowo.net/categories/%E7%AC%94%E8%AE%B0/Emby/"/>
+    
+    
+    <category term="刮削" scheme="https://blog.xiowo.net/tags/%E5%88%AE%E5%89%8A/"/>
+    
+    <category term="Emby" scheme="https://blog.xiowo.net/tags/Emby/"/>
+    
+  </entry>
   
   <entry>
     <title>保姆式Hexo博客搭建教程</title>
